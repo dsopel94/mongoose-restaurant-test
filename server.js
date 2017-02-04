@@ -63,7 +63,7 @@ app.post('/restaurants', (req, res) => {
     if (!(field in req.body)) {
       const message = `Missing \`${field}\` in request body`
       console.error(message);
-      return res.status(400).send(message);
+      return res.status(400).send(message); 
     }
   }
 
